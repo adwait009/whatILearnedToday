@@ -1,0 +1,23 @@
+To send data from external mqtt broker to thingsboard 
+
+1. First of all we will create an instance of mqtt broker
+Here I have created instance of RabbitMQ broker.
+You can create an instance by going on the below link
+https://api.cloudamqp.com/
+
+Once you create an instance you will see the Mqtt details section,
+where you will get the information about host, port, username, password, etc
+
+2. We will use Mosquitto to send the data on this RabbitMQ broker 
+
+Install Mosquitto for your OS,
+go to that directory open cmd here and run the below command.
+
+mosquitto_pub -h broker.hivemq.com -p 1883 -t "tb/mqtt-integration-tutorial/sensors/SN-001/temperature" -m '{\"value\":25.1}' -u username -P password -d
+
+You should use your hostname which you will get after creating instance on RabbitMQ instead of broker.hivemq.com
+
+3. Refer MQTT Integration Configuration on Thingsboard for knowing how to connect your rabbit broker to thingsboard.
+
+
+
