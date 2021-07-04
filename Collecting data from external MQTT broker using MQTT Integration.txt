@@ -18,6 +18,4 @@ mosquitto_pub -h broker.hivemq.com -p 1883 -t "tb/mqtt-integration-tutorial/sens
 You should use your hostname which you will get after creating instance on RabbitMQ instead of broker.hivemq.com
 
 3. Refer MQTT Integration Configuration on Thingsboard for knowing how to connect your rabbit broker to thingsboard.
-
-
-
+https://thingsboard.io/docs/user-guide/integrations/mqtt/
