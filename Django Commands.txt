@@ -1,0 +1,7 @@
+1. To create a Django project use this command.
+
+django-admin startproject projectname
+
+2. To create a app inside Django use this command
+
+python manage.py startapp appname
