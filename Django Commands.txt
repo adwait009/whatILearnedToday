@@ -2,6 +2,22 @@
 
 django-admin startproject projectname
 
-2. To create a app inside Django use this command
+2. To create a app inside Django
 
 python manage.py startapp appname
+
+3. To run the project 
+
+python manage.py runserver
+
+4. To make migrations 
+
+python manage.py makemigrations
+
+5. To migrate 
+
+python manage.py migrate
+
+6. To create admin user and password
+
+python manage.py createsuperuser
